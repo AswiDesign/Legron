@@ -1,0 +1,418 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+
+/* =============== NAVBAR=============== */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(18, 1, 86, 0.934);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.34);
+}
+
+header nav {
+    visibility: hidden;
+    opacity: 0;
+    animation: show-navbar 1s forwards;
+    animation-delay: .2s;
+}
+
+@keyframes show-navbar {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+header nav img {
+    height: 8vh;
+}
+
+/* =============== PAGE 1 =================== */
+
+#page1 {
+    background: linear-gradient(rgba(18, 1, 86, 0.934), black);
+    height: 91.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.page1 {
+    background-color: rgba(120, 120, 120, 0.403);
+    padding: 50px 60px 100px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.34);
+    visibility: hidden;
+    opacity: 0;
+    animation: show-form 1s forwards;
+    animation-delay: .4s;
+}
+
+@keyframes show-form {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.page1 img {
+    height: 110px;
+    margin-left: 15px;
+}
+
+.page1 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.page1 form label {
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.page1 form input {
+    margin-bottom: 10px;
+    padding: 16px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(153, 152, 152, 0.386);
+}
+
+.page1 form input.id {
+    margin-bottom: 20px;
+}
+
+.page1 form input.pass {
+    margin-bottom: 20px;
+}
+
+.page1 form input:placeholder-shown {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.page1 form button {
+    padding: 17px 10px;
+    margin-left: 26px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+}
+
+.page1 form button:hover {
+    transform: scaleX(1.05);
+    background-color: rgba(0, 0, 0, 0.553);
+}
+
+
+
+p.dis {
+    text-align: center;
+    border-color: black;
+    color: white;
+    width: 950px;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-form 1s forwards;
+    animation-delay: .5s;
+}
+
+@keyframes show-form {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+p.com {
+    text-align: center;
+    border-color: black;
+    color: white;
+    width: 950px;
+    font-size: 60px;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-form 1s forwards;
+    animation-delay: .6s;
+}
+
+@keyframes show-form {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+p.contact {
+    text-align: center;
+    border-color: black;
+    color: white;
+    width: 950px;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-form 1s forwards;
+    animation-delay: .7s;
+}
+
+@keyframes show-form {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+a.mail {
+    text-align: center;
+    border-color: black;
+    color: white;
+    width: 950px;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-form 1s forwards;
+    animation-delay: .8s;
+}
+
+@keyframes show-form {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* ============== RESPONSIVE ===================== */
+
+@media screen and (max-width: 1000px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(18, 1, 86, 0.934);
+        box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.34);
+    }
+
+    header nav {
+        visibility: hidden;
+        opacity: 0;
+        animation: show-navbar 1s forwards;
+        animation-delay: .2s;
+    }
+
+    @keyframes show-navbar {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    header nav img {
+        height: 7vh;
+    }
+
+    /* =============== PAGE 1 =================== */
+
+    #page1 {
+        background: linear-gradient(rgba(18, 1, 86, 0.934), black);
+        height: 86.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .page1 {
+        background-color: rgba(120, 120, 120, 0.403);
+        padding: 50px 60px 100px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.34);
+        visibility: hidden;
+        opacity: 0;
+        animation: show-form 1s forwards;
+        animation-delay: .4s;
+    }
+
+    @keyframes show-form {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .page1 img {
+        height: 110px;
+        margin-left: 15px;
+    }
+
+    .page1 form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .page1 form label {
+        color: white;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    .page1 form input {
+        margin-bottom: 10px;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        background-color: rgba(153, 152, 152, 0.386);
+    }
+
+    .page1 form input.id {
+        margin-bottom: 20px;
+    }
+
+    .page1 form input.pass {
+        margin-bottom: 20px;
+    }
+
+    .page1 form input:placeholder-shown {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+
+    .page1 form button {
+        padding: 17px 10px;
+        margin-left: 26px;
+        border: none;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.274);
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    .page1 form button:hover {
+        transform: scaleX(1.05);
+        background-color: rgba(0, 0, 0, 0.553);
+    }
+
+    .dis p.dis {
+        text-align: center;
+        border-color: black;
+        color: white;
+        width: 450px;
+        font-size: 20px;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-form 1s forwards;
+        animation-delay: .5s;
+    }
+
+    @keyframes show-form {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    p.com {
+        text-align: center;
+        border-color: black;
+        color: white;
+        width: 950px;
+        font-size: 40px;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-form 1s forwards;
+        animation-delay: .6s;
+    }
+
+    @keyframes show-form {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    p.contact {
+        text-align: center;
+        border-color: black;
+        color: white;
+        width: 950px;
+        font-size: 20px;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-form 1s forwards;
+        animation-delay: .7s;
+
+    }
+
+    @keyframes show-form {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    a.mail {
+        text-align: center;
+        border-color: black;
+        color: white;
+        width: 950px;
+        font-size: 20px;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-form 1s forwards;
+        animation-delay: .8s;
+        padding-bottom: ;
+    }
+
+    @keyframes show-form {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+}
